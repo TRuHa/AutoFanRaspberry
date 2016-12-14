@@ -16,18 +16,18 @@ def get_cpu_temp():
 
 pwm.start(50)
 
-i = 1
-while i <= 10:
-   if get_cpu_temp() <= 38:
-	pwm.ChangeDutyCycle(50)
-   elif get_cpu_temp() >= 38 and get_cpu_temp() <= 40:    
-	pwm.ChangeDutyCycle(40)
-   elif get_cpu_temp() >= 41 and get_cpu_temp() <= 43:  
-	pwm.ChangeDutyCycle(30)
-   elif get_cpu_temp() >= 44 and get_cpu_temp() <= 46:
-	pwm.ChangeDutyCycle(20)
-   elif get_cpu_temp() >= 47 and get_cpu_temp() <= 49:
-	pwm.ChangeDutyCycle(10)
-   elif get_cpu_temp() >= 49:
-	pwm.ChangeDutyCycle(0)
-   time.sleep(30)
+while True:
+	temp = round(get_cpu_temp())
+	if temp <= 38:
+		pwm.ChangeDutyCycle(50)
+	elif temp >= 38 and temp <= 40:
+		pwm.ChangeDutyCycle(40)
+	elif temp >= 41 and temp <= 43:
+		pwm.ChangeDutyCycle(30)
+	elif temp >= 44 and temp <= 46:
+		pwm.ChangeDutyCycle(20)
+	elif temp >= 47 and temp <= 49:
+		pwm.ChangeDutyCycle(10)
+	elif temp >= 49:
+		pwm.ChangeDutyCycle(0)
+	time.sleep(30)

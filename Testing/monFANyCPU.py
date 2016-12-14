@@ -18,41 +18,41 @@ def get_cpu_temp():
 pwm.start(50)
 os.system('clear')
 
-i = 1
-while i <= 10:
-	if get_cpu_temp() <= 38:
+while True:
+	temperatura = round(get_cpu_temp())
+	if temperatura <= 38:
 		pwm.ChangeDutyCycle(50)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 50%"
 		time.sleep(1)
-	elif get_cpu_temp() >= 38 and get_cpu_temp() <= 40:    
+	elif temperatura >= 38 and temperatura <= 40:    
 		pwm.ChangeDutyCycle(40)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 60%"
 		time.sleep(1)
-	elif get_cpu_temp() >= 41 and get_cpu_temp() <= 43:  
+	elif temperatura >= 41 and temperatura <= 43:  
 		pwm.ChangeDutyCycle(30)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 70%"
 		time.sleep(1)
-	elif get_cpu_temp() >= 44 and get_cpu_temp() <= 46:
+	elif temperatura >= 44 and temperatura <= 46:
 		pwm.ChangeDutyCycle(20)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 80%"
 		time.sleep(1)
-	elif get_cpu_temp() >= 47 and get_cpu_temp() <= 49:
+	elif temperatura >= 47 and temperatura <= 49:
 		pwm.ChangeDutyCycle(10)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 90%"
 		time.sleep(1)
-	elif get_cpu_temp() >= 49:
+	elif temperatura >= 49:
 		pwm.ChangeDutyCycle(0)
 		os.system('clear')
-		print "Temperatura CPU: ", round(get_cpu_temp())
+		print "Temperatura CPU: ", temperatura
 		print "Ventilador al 100%"
 		time.sleep(1)
