@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Version AutoFan1.0
 
 import RPi.GPIO as GPIO
 import commands

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Version AutoFan1.0
 
 import commands
 import time

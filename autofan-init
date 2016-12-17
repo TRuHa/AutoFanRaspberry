@@ -1,6 +1,7 @@
 #!/bin/sh
+#Version AutoFan1.0
 ### BEGIN INIT INFO
-# Provides:     autofan
+# Provides:     autofan-init
 # Should-Start:
 # Required-Start:   $local_fs
 # Required-Stop:    $local_fs
@@ -16,7 +17,7 @@
 . /lib/lsb/init-functions
 
 DAEMON=/home/pi/gpio/autofan.py
-NOMBRE=autofan
+NOMBRE=autofan-init
 LOGFILE=/var/log/autofan.log
 ERRFILE=/var/log/autofan.err
 DESCRIPCION="Ventilador automatico"
