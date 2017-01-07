@@ -1,6 +1,16 @@
 #!/usr/bin/python
 
+<<<<<<< HEAD
 import sys
+=======
+distro = open("/etc/issue","r")
+if distro.read() < "OpenELEC":
+	import sys
+	sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib')
+distro.close()
+
+import RPi.GPIO as GPIO
+>>>>>>> origin/master
 import commands
 import time
 #sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib') # Si el sistema es Kodi habilitar esta linea

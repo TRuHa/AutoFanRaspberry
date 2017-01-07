@@ -1,4 +1,5 @@
 #!/usr/bin/python
+<<<<<<< HEAD
 
 import commands
 import time
@@ -6,6 +7,20 @@ import sys
 import os
 #sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib') # Si el sistema es Kodi habilitar esta linea
 import RPi.GPIO as GPIO
+=======
+#Version AutoFan1.0
+
+distro = open("/etc/issue","r")
+if distro.read() < "OpenELEC":
+	import sys
+	sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib')
+distro.close()
+
+import RPi.GPIO as GPIO
+import commands
+import time
+import os
+>>>>>>> origin/master
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.OUT)
