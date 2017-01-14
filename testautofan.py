@@ -3,9 +3,9 @@
 import commands
 import time
 import sys
-import os
 #sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib') # Si el sistema es Kodi habilitar esta linea
 import RPi.GPIO as GPIO
+import os
 
 #GPIO usado para la conexion del ventilador
 Gfan = 17
