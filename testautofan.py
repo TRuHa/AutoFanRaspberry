@@ -1,5 +1,4 @@
 #!/usr/bin/python
-<<<<<<< HEAD
 
 import commands
 import time
@@ -7,24 +6,20 @@ import sys
 import os
 #sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib') # Si el sistema es Kodi habilitar esta linea
 import RPi.GPIO as GPIO
-=======
-#Version AutoFan1.0
 
-distro = open("/etc/issue","r")
-if distro.read() < "OpenELEC":
-	import sys
-	sys.path.append('/storage/.kodi/addons/python.RPi.GPIO/lib')
-distro.close()
+#GPIO usado para la conexion del ventilador
+Gfan = 17
 
-import RPi.GPIO as GPIO
-import commands
-import time
-import os
->>>>>>> origin/master
+#Rango de temperatura del CPU
+tempA = 37
+tempB = 40
+tempC = 43
+tempD = 46
+tempE = 49
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(17, GPIO.OUT)
-pwm = GPIO.PWM(17, 1000)
+GPIO.setup(Gfan, GPIO.OUT)
+pwm = GPIO.PWM(Gfan, 1000)
 fan = 50
 
 
@@ -64,22 +59,22 @@ try:
 		print ""
 		print "Presione [CTRL+C] para abortar."
 		time.sleep(1)
-		if temp <= 38:
+		if temp <= tempA:
 			pwm.ChangeDutyCycle(50)
 			fan = 50
-		elif temp >= 38 and temp <= 40:    
+		elif temp >= tempA+1 and temp <= tempB:    
 			pwm.ChangeDutyCycle(40)
 			fan = 60
-		elif temp >= 41 and temp <= 43:  
+		elif temp >= tempB+1 and temp <= tempC:
 			pwm.ChangeDutyCycle(30)
 			fan = 70
-		elif temp >= 44 and temp <= 46:
+		elif temp >= tempC+1 and temp <= tempD:
 			pwm.ChangeDutyCycle(20)
 			fan = 80
-		elif temp >= 47 and temp <= 49:
+		elif temp >= tempD+1 and temp <= tempE:
 			pwm.ChangeDutyCycle(10)
 			fan = 90
-		elif temp >= 49:
+		elif temp >= tempE+1:
 			pwm.ChangeDutyCycle(0)
 			fan = 100
 
