@@ -16,9 +16,6 @@ Raspbian:
 Kodi:
 - instalar Unoffical repository, http://kodi.wiki/view/Unofficial_add-on_repositories
 - Buscar e instalar RPi.GPIO
-
-**Ejecución**
-
-Raspbian:
+- editar autofan.py y testautofan.py y eliminar la # de la linea 6
 
 
