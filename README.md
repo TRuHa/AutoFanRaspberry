@@ -10,10 +10,10 @@ para este programa he usado el GPio 17 y el PIN 2 de 5v.
 #
 **Instalacion**
 
-Raspbian: 
+  Raspbian: 
 - sudo apt-get install python-dev python-rpi.gpio
 
-Kodi:
+  Kodi:
 - instalar Unoffical repository, http://kodi.wiki/view/Unofficial_add-on_repositories
 - Buscar e instalar RPi.GPIO
 - editar autofan.py y testautofan.py y eliminar la # de la linea 6
