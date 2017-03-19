@@ -7,7 +7,7 @@ Segun la temperatura variara las revoluciones del ventilador.
 ### Configuracion de Pines
 He usado el GPIO18 en BCM y el Pin# 2 de 5v.
 
-<img_src="https://drive.google.com/file/d/0B7DZY7tY2OyodTBoRW5MUjhvLXM/view?usp=sharing" />
+<img_src="https://lh5.googleusercontent.com/lLxLTc5NZzlyPswuJHWHBgHiO4w8pFpwjtut3m7V29E0T1xdw4kmvX9mj0WjUxRrYob3sXyQjsrLDM0=w1422-h923-rw" />
 
 # Instalacion
 
