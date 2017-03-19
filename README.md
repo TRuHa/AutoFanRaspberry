@@ -6,16 +6,14 @@ Segun la temperatura variara las revoluciones del ventilador.
 #
 **Configuracion de Pines**
 
-para este programa he usado el GPio 17 y el PIN 2 de 5v.
+para este programa he usado el GPio 18 y el PIN 2 de 5v.
+#
+<img_src="https://drive.google.com/open?id=0B7DZY7tY2OyodTBoRW5MUjhvLXM" />
 #
 **Instalacion**
-
-Raspbian: 
-- sudo apt-get install python-dev python-rpi.gpio
-  
-Kodi:
 - instalar Unoffical repository, http://kodi.wiki/view/Unofficial_add-on_repositories
 - Buscar e instalar RPi.GPIO
-- editar autofan.py y testautofan.py y eliminar la # de la linea 6
+- Copia carpeta **"autofan"** a **"/Storage"**
+- Añafe la linea **[python /Storage/autofan/autofan.py]** al archivo **"/Configfiles/autostart.sh"**
 
 
