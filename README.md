@@ -8,7 +8,7 @@ Segun la temperatura variara las revoluciones del ventilador.
 
 para este programa he usado el GPio 18 y el PIN 2 de 5v.
 
-```<img_src="https://drive.google.com/open?id=0B7DZY7tY2OyodTBoRW5MUjhvLXM" />
+```<img_src="https://drive.google.com/file/d/0B7DZY7tY2OyodTBoRW5MUjhvLXM/view?usp=sharing" />
 
 #Instalacion
 
