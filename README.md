@@ -11,7 +11,7 @@ He usado el GPIO18 en BCM y el Pin# 2 de 5v.
 
 ### Instalacion
 
-- instalar Unoffical repository, http://kodi.wiki/view/Unofficial_add-on_repositories
+- instalar Unoffical repository: http://kodi.wiki/view/Unofficial_add-on_repositories
 - Buscar e instalar RPi.GPIO
 - Copia carpeta **"autofan"** a **"/Storage"**
 - Añafe la linea **[python /Storage/autofan/autofan.py]** al archivo **"/Configfiles/autostart.sh"**
