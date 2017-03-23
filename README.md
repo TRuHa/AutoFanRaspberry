@@ -16,4 +16,7 @@ He usado el GPIO18 en BCM y el Pin# 2 de 5v.
 - Copia carpeta **"autofan"** a **"/Storage"**
 - Añade la línea **[python /Storage/autofan/autofan.py]** al archivo **"/Configfiles/autostart.sh"**
 
+### Ejecución
 
+Una vez copiada la carpeta e instalado en el inicio, ejecutamos **objetivo.py** para establecer la temperatura a la que se desea mantener.
+También tenemos la opción de ejecutar **monitorCPU.py** para comprobar la temperatura de la CPU, el objetivo y los ciclos del ventilador. De esta forma nos aseguramos el correcto funcionamiento.
