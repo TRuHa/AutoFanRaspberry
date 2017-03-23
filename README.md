@@ -5,7 +5,7 @@ Para empezar, hace una lectura de la temperatura de la CPU.
 Según la temperatura variará las revoluciones del ventilador.
 
 ### Configuración de Pines
-He usado el GPIO18 en BCM y el Pin# 2 de 5v.
+He usado el GPIO18 en BCM, el Pin# 2 de 5v y un transistor NPN2222.
 
 ![](https://lh4.googleusercontent.com/wH_1kvOPZYzrxHodAodnL5vnziQXTYwIKeDSXmg-gTvh363xsVQxb-nD7NyH3MJwmWcxTnHsvDva6Bo=w1920-h950-rw)
 
